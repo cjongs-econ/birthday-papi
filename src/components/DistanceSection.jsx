@@ -64,25 +64,6 @@ export default function DistanceSection() {
           <span className="font-semibold text-rose-900">{distanceSection.cityB}</span>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mt-4">
-        <div className="rounded-2xl bg-white/70 backdrop-blur-sm border border-white/60 shadow-md shadow-blush-100/60 px-5 py-4">
-          <p className="text-xs uppercase tracking-widest text-blush-400 font-semibold">
-            Current distance
-          </p>
-          <p className="mt-1 text-lg font-semibold text-rose-900">
-            {distanceSection.currentDistance}
-          </p>
-        </div>
-        <div className="rounded-2xl bg-white/70 backdrop-blur-sm border border-white/60 shadow-md shadow-blush-100/60 px-5 py-4">
-          <p className="text-xs uppercase tracking-widest text-blush-400 font-semibold">
-            Days until we see each other again
-          </p>
-          <p className="mt-1 text-lg font-semibold text-rose-900">
-            {distanceSection.daysUntilNextMeeting}
-          </p>
-        </div>
-      </div>
     </section>
   );
 }

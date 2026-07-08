@@ -5,7 +5,7 @@
 export const names = {
   him: "Sergi",
   nickname: "papi",
-  signature: "de tu yogurín",
+  signature: "tu yogurín",
 };
 
 export const opening = {
@@ -18,53 +18,67 @@ export const opening = {
 
 export const questIntro = {
   missionText:
-    "Today's mission: walk through a few little pieces of us, collect the memories, and unlock your final birthday gift.",
+    "Today's mission: walk through a few little pieces of us, guess where we were, and unlock your final birthday gift.",
 };
 
 // Photo placeholders live in /public/photos — drop a real photo in with
 // the same filename and it will show up automatically.
 // This is our city timeline: Beijing -> Barcelona -> Thailand -> Rome -> Munich.
 // The Thailand and Rome messages below are placeholders — swap in the real memories.
+// The message/clue text intentionally avoids naming the city — he has to guess it
+// from the photo and clue before he can continue. `city` is the properly-cased
+// name shown once he guesses right; `answers` are the accepted spellings,
+// matched case-insensitively and accent-insensitively.
 export const memoryStops = [
   {
     id: "beijing",
     title: "Where it started",
     message:
-      "Somewhere between Peking Uni, Tsinghua, and all the chaos of Beijing, there was already something about you. Honestly, I think I liked you before I even admitted it.",
-    clue: "First clue: this is where you quietly became special to me.",
+      "Somewhere between two university campuses and all the chaos of a sprawling capital, there was already something about you. Honestly, I think I liked you before I even admitted it.",
+    clue: "First clue: this is where you quietly became special to me. Two famous universities might give it away.",
     photo: "beijing.jpeg",
+    city: "Beijing",
+    answers: ["beijing", "peking"],
   },
   {
     id: "barcelona",
-    title: "Flying to you before the GRE",
+    title: "Flying in before a big exam",
     message:
-      "Before my GRE, I flew to Barcelona to see you. Maybe not the most rational study strategy, but definitely the right emotional decision.",
-    clue: "Second clue: some flights are worth more than sleep, plans, or exam stress.",
+      "Before a huge exam back home, I hopped on a flight to see you instead. Maybe not the most rational study strategy, but definitely the right emotional decision.",
+    clue: "Second clue: some flights are worth more than sleep, plans, or exam stress. Gaudí lives here.",
     photo: "barcelona.jpeg",
+    city: "Barcelona",
+    answers: ["barcelona"],
   },
   {
     id: "thailand",
     title: "Sun, salt water, and us",
     message:
-      "Thailand gave us lazy mornings, silly photos, and the kind of easy happiness that made the rest of the world disappear for a while.",
-    clue: "Third clue: some of the best days need no plan at all.",
+      "Lazy mornings, silly photos, and the kind of easy happiness that made the rest of the world disappear for a while.",
+    clue: "Third clue: think beaches, islands, and pad thai.",
     photo: "thailand.jpeg",
+    city: "Thailand",
+    answers: ["thailand"],
   },
   {
     id: "rome",
     title: "Getting lost on purpose",
     message:
-      "Rome had us wandering streets with no real destination, arguing about maps, and somehow always ending up somewhere beautiful together.",
-    clue: "Fourth clue: even lost, we were never lost with each other.",
+      "Wandering streets with no real destination, arguing about maps, and somehow always ending up somewhere beautiful together.",
+    clue: "Fourth clue: all roads lead here, apparently.",
     photo: "rome.jpeg",
+    city: "Rome",
+    answers: ["rome"],
   },
   {
     id: "munich",
     title: "Papi for real now",
     message:
-      "And now there's Munich, waiting for you. I called you papi a long time ago, and now that you're turning 30, it's officially legally, emotionally, and spiritually confirmed.",
-    clue: "Final clue: your birthday title has been unlocked. One more stop before your gift.",
+      "And now there's a city waiting for you, one that might just become home. I called you papi a long time ago, and now that you're turning 30, it's officially legally, emotionally, and spiritually confirmed.",
+    clue: "Final clue: this is where I live now, and where I hope you'll join me. Beer gardens and the Alps nearby.",
     photo: "munich.jpeg",
+    city: "Munich",
+    answers: ["munich", "münchen"],
   },
 ];
 
@@ -73,9 +87,6 @@ export const distanceSection = {
   text: "The time difference is hard. Missing each other is hard. But somehow, thinking about the long-term future makes everything feel brighter.",
   cityA: "Munich",
   cityB: "Shanghai",
-  // Edit these two placeholders any time.
-  currentDistance: "[add distance here]",
-  daysUntilNextMeeting: "[add number here]",
 };
 
 export const finalGift = {
@@ -105,7 +116,7 @@ export const finalLetter = {
     "I cannot wait to see you again as soon as possible. I cannot wait for more cities, more flights, more silly moments, more cuddles, and more of us.",
     "Happy 30th birthday, Sergi. I am so lucky I get to call you my papi.",
   ],
-  signatureLead: "With unlimited tokens,",
+  signatureLead: "With love,",
   signature: names.signature,
 };
 
