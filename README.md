@@ -1,6 +1,6 @@
 # Happy Birthday, Papi 💗
 
-A tiny birthday scavenger hunt website for Sergi's 30th birthday, built with React, Vite, and Tailwind CSS. Deploys automatically to GitHub Pages via GitHub Actions.
+A tiny birthday scavenger hunt website for Honey's 30th birthday, built with React, Vite, and Tailwind CSS. Deploys automatically to GitHub Pages via GitHub Actions.
 
 Live site: **https://cjongs-econ.github.io/birthday-papi/**
 

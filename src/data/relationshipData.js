@@ -3,7 +3,7 @@
 // final letter. No other file needs to change for content edits.
 
 export const names = {
-  him: "Sergi",
+  him: "Honey",
   nickname: "papi",
   signature: "tu yogurín",
 };
@@ -11,7 +11,7 @@ export const names = {
 export const opening = {
   heading: "Happy Birthday, papi",
   subheading:
-    "A tiny birthday quest for Sergi, from far away but very much with you.",
+    "A tiny birthday quest for Honey, from far away but very much with you.",
   smallText: "For your 30th, because you are papi for real now.",
   buttonText: "Start your birthday quest",
 };
@@ -23,8 +23,8 @@ export const questIntro = {
 
 // Photo placeholders live in /public/photos — drop a real photo in with
 // the same filename and it will show up automatically.
-// This is our city timeline: Beijing -> Barcelona -> Thailand -> Rome -> Munich.
-// The Thailand and Rome messages below are placeholders — swap in the real memories.
+// This is our city timeline: Beijing -> Barcelona -> Bangkok -> Rome -> Munich.
+// The Bangkok and Rome messages below are placeholders — swap in the real memories.
 // The message/clue text intentionally avoids naming the city — he has to guess it
 // from the photo and clue before he can continue. `city` is the properly-cased
 // name shown once he guesses right; `answers` are the accepted spellings,
@@ -51,14 +51,14 @@ export const memoryStops = [
     answers: ["barcelona"],
   },
   {
-    id: "thailand",
-    title: "Sun, salt water, and us",
+    id: "bangkok",
+    title: "Sun, street food, and us",
     message:
-      "Lazy mornings, silly photos, and the kind of easy happiness that made the rest of the world disappear for a while.",
-    clue: "Third clue: think beaches, islands, and pad thai.",
+      "Tuk-tuks, night markets, and the kind of easy happiness that made the rest of the world disappear for a while.",
+    clue: "Third clue: think temples, tuk-tuks, and pad thai.",
     photo: "thailand.jpeg",
-    city: "Thailand",
-    answers: ["thailand"],
+    city: "Bangkok",
+    answers: ["bangkok"],
   },
   {
     id: "rome",
@@ -114,7 +114,7 @@ export const finalLetter = {
     "I am so proud of you: of your ambition, your goals, and the way you keep moving toward the life you want. I love that about you so much.",
     "Long distance is not always easy. The time difference can be annoying, and I miss the simple things most: cuddling, laughing, being close, and just existing next to you. But even with the distance, thinking about our future makes everything feel brighter.",
     "I cannot wait to see you again as soon as possible. I cannot wait for more cities, more flights, more silly moments, more cuddles, and more of us.",
-    "Happy 30th birthday, Sergi. I am so lucky I get to call you my papi.",
+    "Happy 30th birthday, Honey. I am so lucky I get to call you my papi.",
   ],
   signatureLead: "With love,",
   signature: names.signature,
