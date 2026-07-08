@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply font-body text-rose-950 antialiased;
+  background: linear-gradient(135deg, #fff5f7 0%, #fff0f4 35%, #f6f3ff 100%);
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display;
+}
+
+::selection {
+  @apply bg-blush-200;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
