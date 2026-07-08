@@ -12,11 +12,14 @@ All the words, names, memory stops, distance stats, coupon text, and the final l
 
 You should not need to touch any component to change text — just edit that file.
 
-## Adding your photos and video
+## Adding your photos
 
-- Put photos in [public/photos/](public/photos/) using the exact filenames referenced in `relationshipData.js` (`china.jpg`, `early-us.jpg`, `barcelona.jpg`, `papi.jpg`, `tokens.jpg`, `us.jpg`).
-- Put the birthday video at `public/videos/birthday-message.mp4`.
-- If a photo or video file is missing, the site automatically shows a styled placeholder instead of a broken image/video — so it's safe to push before you have all the media ready.
+Put photos in [public/photos/](public/photos/) using the exact filenames referenced in `relationshipData.js`:
+
+- City timeline: `beijing.jpeg`, `barcelona.jpeg`, `thailand.jpeg`, `rome.jpeg`, `munich.jpeg`
+- Final gift picture: `finale.jpeg`
+
+If a photo file is missing, the site automatically shows a styled placeholder instead of a broken image — so it's safe to push before you have all the media ready.
 
 Asset paths are resolved through [src/utils/assetPath.js](src/utils/assetPath.js), which respects Vite's configured base path. Never hardcode a path like `/photos/example.jpg` in a component — always use `assetPath("photos/example.jpg")`.
 

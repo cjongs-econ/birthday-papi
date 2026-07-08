@@ -4,8 +4,8 @@ import { assetPath } from "../utils/assetPath.js";
 import { finalGift } from "../data/relationshipData.js";
 
 export default function FinalGift() {
-  const [videoError, setVideoError] = useState(false);
-  const videoSrc = assetPath(`videos/${finalGift.video.filename}`);
+  const [photoError, setPhotoError] = useState(false);
+  const photoSrc = assetPath(`photos/${finalGift.photo.filename}`);
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 gap-10">
@@ -52,25 +52,23 @@ export default function FinalGift() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="w-full max-w-md rounded-3xl bg-white/80 backdrop-blur-sm shadow-xl shadow-lavender-200/50 p-6 sm:p-8"
       >
-        <h3 className="text-xl font-bold text-rose-900 mb-4">{finalGift.video.title}</h3>
+        <h3 className="text-xl font-bold text-rose-900 mb-4">{finalGift.photo.title}</h3>
 
-        {!videoError ? (
-          <video
-            controls
-            className="w-full rounded-2xl bg-black/5"
-            src={videoSrc}
-            onError={() => setVideoError(true)}
-          >
-            Your browser does not support the video tag.
-          </video>
+        {!photoError ? (
+          <img
+            src={photoSrc}
+            alt={finalGift.photo.title}
+            className="w-full rounded-2xl object-cover"
+            onError={() => setPhotoError(true)}
+          />
         ) : (
           <div className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-lavender-100 via-blush-100 to-peach-100 py-16 px-6 text-center">
             <span className="text-4xl" aria-hidden="true">
-              🎬
+              📷
             </span>
-            <p className="text-rose-800/80">{finalGift.video.placeholderText}</p>
+            <p className="text-rose-800/80">{finalGift.photo.placeholderText}</p>
             <p className="text-xs uppercase tracking-wide text-rose-300">
-              videos/{finalGift.video.filename}
+              photos/{finalGift.photo.filename}
             </p>
           </div>
         )}

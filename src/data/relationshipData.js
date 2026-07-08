@@ -23,54 +23,48 @@ export const questIntro = {
 
 // Photo placeholders live in /public/photos — drop a real photo in with
 // the same filename and it will show up automatically.
+// This is our city timeline: Beijing -> Barcelona -> Thailand -> Rome -> Munich.
+// The Thailand and Rome messages below are placeholders — swap in the real memories.
 export const memoryStops = [
   {
-    id: "china",
+    id: "beijing",
     title: "Where it started",
     message:
-      "Somewhere between Peking Uni, Tsinghua, Shanghai, and all the chaos of China, there was already something about you.",
+      "Somewhere between Peking Uni, Tsinghua, and all the chaos of Beijing, there was already something about you. Honestly, I think I liked you before I even admitted it.",
     clue: "First clue: this is where you quietly became special to me.",
-    photo: "china.jpg",
-  },
-  {
-    id: "early-us",
-    title: "I already liked you",
-    message:
-      "Maybe Barcelona made it clearer, but honestly, I think I already liked you from China.",
-    clue: "Second clue: sometimes you know before you fully admit it.",
-    photo: "early-us.jpg",
+    photo: "beijing.jpeg",
   },
   {
     id: "barcelona",
     title: "Flying to you before the GRE",
     message:
       "Before my GRE, I flew to Barcelona to see you. Maybe not the most rational study strategy, but definitely the right emotional decision.",
-    clue: "Third clue: some flights are worth more than sleep, plans, or exam stress.",
-    photo: "barcelona.jpg",
+    clue: "Second clue: some flights are worth more than sleep, plans, or exam stress.",
+    photo: "barcelona.jpeg",
   },
   {
-    id: "papi",
+    id: "thailand",
+    title: "Sun, salt water, and us",
+    message:
+      "Thailand gave us lazy mornings, silly photos, and the kind of easy happiness that made the rest of the world disappear for a while.",
+    clue: "Third clue: some of the best days need no plan at all.",
+    photo: "thailand.jpeg",
+  },
+  {
+    id: "rome",
+    title: "Getting lost on purpose",
+    message:
+      "Rome had us wandering streets with no real destination, arguing about maps, and somehow always ending up somewhere beautiful together.",
+    clue: "Fourth clue: even lost, we were never lost with each other.",
+    photo: "rome.jpeg",
+  },
+  {
+    id: "munich",
     title: "Papi for real now",
     message:
-      "I called you papi, and now that you are turning 30, it is officially legally, emotionally, and spiritually confirmed.",
-    clue: "Fourth clue: your birthday title has been unlocked.",
-    photo: "papi.jpg",
-  },
-  {
-    id: "tokens",
-    title: "Unlimited tokens",
-    message:
-      "For your birthday, I give you unlimited tokens. Unlimited cuddles, unlimited silliness, unlimited kisses, unlimited attention, unlimited tiny annoyances, and unlimited choosing you again.",
-    clue: "Fifth clue: your balance is infinite.",
-    photo: "tokens.jpg",
-  },
-  {
-    id: "us",
-    title: "Cuddling and being silly",
-    message:
-      "What I miss most is the simple version of us: cuddling, being silly, laughing at nothing, and feeling close without needing to explain anything.",
-    clue: "Final clue: the treasure is not a thing. It is us.",
-    photo: "us.jpg",
+      "And now there's Munich, waiting for you. I called you papi a long time ago, and now that you're turning 30, it's officially legally, emotionally, and spiritually confirmed.",
+    clue: "Final clue: your birthday title has been unlocked. One more stop before your gift.",
+    photo: "munich.jpeg",
   },
 ];
 
@@ -86,7 +80,7 @@ export const distanceSection = {
 
 export const finalGift = {
   heading: "You found your birthday treasure",
-  subheading: "One coupon, one video, and unlimited tokens.",
+  subheading: "One coupon, one picture, and unlimited tokens.",
   coupon: {
     title: "Unlimited Tokens Coupon",
     subtitle: "Redeemable forever",
@@ -95,10 +89,10 @@ export const finalGift = {
     finePrint:
       "Terms and conditions: no expiry date. No hidden fees. Redeemable across time zones. Especially valid when we see each other again.",
   },
-  video: {
-    title: "Your video message",
-    placeholderText: "Replace this with a short video from me.",
-    filename: "birthday-message.mp4",
+  photo: {
+    title: "One last picture",
+    placeholderText: "Replace this with a favorite photo of us.",
+    filename: "finale.jpeg",
   },
 };
 
